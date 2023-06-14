@@ -15,10 +15,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-   
-              {children}
-       
+      <body className={[inter.className, 'bg-slate-900', 'text-gray-50'].join(' ')}>
+        <header className='mx-auto flex flex-row justify-between max-w-screen-2xl px-3 py-6 sticky top-0 z-50 bg-slate-900'>
+            <div className='logo-section'>
+              <span className='bg-gradient-to-br from-red-500 to-yellow-100 bg-clip-text text-xl font-bold text-transparent'>Sreejit's blog</span>
+            </div>
+            <ul className='flex flex-row gap-5'>
+              <li>Blogs</li>
+              <li>Github</li>
+              <li>Twitter</li>
+            </ul>
+        </header>
+        {children}
       </body>
     </html>
   )
