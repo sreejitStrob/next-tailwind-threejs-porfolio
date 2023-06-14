@@ -15,8 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={[inter.className, 'bg-slate-900', 'text-gray-50'].join(' ')}>
-        <header className='mx-auto flex flex-row justify-between max-w-screen-2xl px-3 py-6 sticky top-0 z-50 bg-slate-900'>
+      <body className={[inter.className, 'bg-gradient-to-bl from-[#380036] to-[#044141]', 'text-gray-50','min-h-screen'].join(' ')}>
+        <header className='mx-auto flex flex-row justify-between min-w-screen px-3 py-6 sticky top-0 z-50 bg-[#360835]'>
             <div className='logo-section'>
               <span className='bg-gradient-to-br from-red-500 to-yellow-100 bg-clip-text text-xl font-bold text-transparent'>Sreejit's blog</span>
             </div>
